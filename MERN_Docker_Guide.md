@@ -77,11 +77,15 @@ services:
 
 ## Build
 
+Run this command only when there is a Code Change
+
 ``` bash
 docker compose build
 ```
 
 ## Start
+
+Run this Command to run the Containers
 
 ``` bash
 docker compose up -d
@@ -89,11 +93,15 @@ docker compose up -d
 
 ## Stop
 
+Run this Command to Stop the Containers
+
 ``` bash
 docker compose down
 ```
 
 ## Running Services
+
+Run this Command to list the Containers
 
 ``` bash
 docker compose ps
@@ -160,3 +168,10 @@ docker info
 If Docker Desktop is configured with an invalid proxy, disable or
 correct it in **Docker Desktop → Settings → Resources → Proxies**, then
 restart Docker Desktop.
+
+
+git add .
+
+git commit -m "Enter a Message"
+
+git push
