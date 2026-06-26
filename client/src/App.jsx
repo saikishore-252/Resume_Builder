@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Layout from './pages/Layout'
+import Contact from './components/home/Contact'
 import Dashboard from './pages/Dashboard'
 import ResumeBuilder from './pages/ResumeBuilder'
 import Preview from './pages/Preview'
@@ -42,7 +43,7 @@ const App = () => {
     <Toaster />
       <Routes>
         <Route path='/' element={<Home />}/>
-
+        <Route path='/contact' element={<Contact />}/>
         <Route path='app' element={<Layout />}>
           <Route index element={<Dashboard />}/>
           <Route path='builder/:resumeId' element={<ResumeBuilder />}/>
